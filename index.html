@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayShare - Expense Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PayShare</h1>
+        <p>Collaborative Expense Manager</p>
+    </header>
+
+    <main>
+        <section class="expense-entry">
+            <h2>Add Expense</h2>
+            <form id="expenseForm">
+                <input type="text" id="description" placeholder="Expense Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <input type="text" id="contributors" placeholder="Contributors (comma separated)" required>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div id="summary">
+                <p>Total: $<span id="total">0</span></p>
+                <p>Paid: $<span id="paid">0</span></p>
+                <p>Pending: $<span id="pending">0</span></p>
+            </div>
+            <table id="expenseTable">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Contributors</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

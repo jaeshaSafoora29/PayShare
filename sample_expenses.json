@@ -1,0 +1,12 @@
+[
+    {
+        "description": "Lunch",
+        "amount": 120,
+        "contributors": ["Alice", "Bob"]
+    },
+    {
+        "description": "Movie Tickets",
+        "amount": 300,
+        "contributors": ["Alice", "Charlie"]
+    }
+]
