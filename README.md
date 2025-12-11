@@ -1,39 +1,51 @@
-# PayShare
-**Domain:** Finance
+PayShare – Collaborative Expense Manager
 
-PayShare is a small, self-contained shared expense splitter built as a static web app (HTML/CSS/JavaScript).
-It lets you add expenses, auto-calculates equal shares among contributors, shows a dashboard of totals,
-allows edit/delete/settle operations, and exports CSV.
+PayShare is a lightweight and interactive web-based tool designed to simplify group expense tracking, shared payments, and balance settlement among friends, family, or teams. It helps users log shared expenses, calculate individual shares, and understand who owes whom — all in real-time and directly in the browser with no setup required.
 
-## Files
-- `index.html` — main app
-- `css/style.css` — styles
-- `js/app.js` — application logic (vanilla JS)
-- `data/sample_expenses.json` — example dataset
-- `README.md` — this file
+Features
 
-## Features Implemented
-- Add and manage shared expenses (title, amount, payer, contributors).
-- Auto-calculation of each member's share (equal split).
-- Dashboard for total spent, pending amounts, and member list.
-- List of expenses with edit / delete / settle actions.
-- Summary table and simple bar chart showing net balances.
-- Export expenses to CSV.
-- Local storage persistence so data stays in browser.
+Add and manage shared expenses with descriptions, amounts, and contributors
+Automatic calculation of each member’s share and outstanding balance
+Dashboard view for total, paid, and pending amounts
+Editable and removable expense entries with instant recalculation
+Visual, structured table for all logged expenses
+Lightweight, responsive interface suitable for all devices
 
-## How to run
-1. Unzip the provided folder.
-2. Open `index.html` in your browser (no server required).
-3. Use the form to add sample expenses, or click "Load Sample Data".
+Optional Enhancements
 
-## Notes / Challenges
-- Floating-point rounding handled by rounding to two decimals for display and calculations.
-- This is a demo static app; to extend:
-  - Add user accounts, real authentication and a backend.
-  - Integrate payment APIs for actual settlements.
-  - Add more robust splitting rules (percent, shares etc.)
+Export group summaries to PDF or CSV
+Notifications or reminders for pending payments
+Integration with payment APIs for mock settlements
+Multi-group management for trips, events, offices, etc.
+Pie/Bar charts for expense distribution using Chart.js
 
-## Deliverables You Can Upload to GitHub
-- All project files in this folder can be pushed to a GitHub repository.
-- Optionally create a `gh-pages` branch to host the static site via GitHub Pages.
+PayShare/
+│
+├── index.html
+├── style.css
+├── app.js
+├── README.md
+│
+├── data/
+│   └── sample_expenses.json
+│
+└── assets/
+    └── (icons, images, etc.)
 
+Challenges
+
+Handling floating-point precision in financial calculations
+Designing a clean UI for quick data entry and clarity
+Efficient dynamic updates when expenses are added, edited, or deleted
+Managing multiple contributors and ensuring fair balance distribution
+
+Usage
+
+Open index.html in your browser.
+Add a new shared expense using the input fields.
+View auto-calculated totals and balances on the dashboard.
+Edit or delete expenses dynamically as needed.
+Use sample data (optional) to test the system.
+
+Author
+Jaesha Safoora
