@@ -7,45 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>PayShare</h1>
-        <p>Collaborative Expense Manager</p>
-    </header>
 
-    <main>
-        <section class="expense-entry">
-            <h2>Add Expense</h2>
-            <form id="expenseForm">
-                <input type="text" id="description" placeholder="Expense Description" required>
-                <input type="number" id="amount" placeholder="Amount" required>
-                <input type="text" id="contributors" placeholder="Contributors (comma separated)" required>
-                <button type="submit">Add Expense</button>
-            </form>
-        </section>
+<header>
+    <h1>PayShare</h1>
+    <p>Collaborative Expense Manager</p>
+</header>
 
-        <section class="dashboard">
-            <h2>Dashboard</h2>
-            <div id="summary">
-                <p>Total: $<span id="total">0</span></p>
-                <p>Paid: $<span id="paid">0</span></p>
-                <p>Pending: $<span id="pending">0</span></p>
-            </div>
-            <table id="expenseTable">
-                <thead>
-                    <tr>
-                        <th>Description</th>
-                        <th>Amount</th>
-                        <th>Contributors</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Dynamic content here -->
-                </tbody>
-            </table>
-        </section>
-    </main>
+<main>
+    <section class="expense-entry">
+        <h2>Add Expense</h2>
+        <form id="expenseForm">
+            <input type="text" id="description" placeholder="Expense Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <input type="text" id="contributors" placeholder="Contributors (comma separated)" required>
+            <button type="submit">Add Expense</button>
+        </form>
+    </section>
 
-    <script src="app.js"></script>
+    <section class="dashboard">
+        <h2>Dashboard</h2>
+        <div id="summary">
+            <p>Total: $<span id="total">0</span></p>
+            <p>Paid: $<span id="paid">0</span></p>
+            <p>Pending: $<span id="pending">0</span></p>
+        </div>
+
+        <table id="expenseTable">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Contributors</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Expenses will appear here -->
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<!-- JS MUST be at the end -->
+<script src="app.js"></script>
+
 </body>
 </html>
